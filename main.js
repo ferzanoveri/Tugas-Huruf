@@ -82,7 +82,7 @@ function main(){
 
     var theta = glMatrix.glMatrix.toRadian(1);//sudutnya adalah 1 derajat   
     var animate = function(){
-        if (!freeze) {
+        if (freeze) {
             glMatrix.mat4.rotate(modmatrix, modmatrix, theta, [1.0, 1.0, 1.0]);
         }
         
